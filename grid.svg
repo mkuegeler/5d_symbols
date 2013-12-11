@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg" onload="init(evt)">
+
+<script type="text/ecmascript" xlink:href="js/grid.js"/>
+<script type="text/ecmascript">
+///////////////////////////////////////////////////////////////////////////////
+function init (evt) {
+
+// id,x,y,height,width,AmountX,AmountY,style	
+new Symbols().Grid("grid_1",0,0, 480,640,15,15, "stroke:#e8e8e8;stroke-width:0.5px");
+
+
+
+}
+///////////////////////////////////////////////////////////////////////////////
+</script>
+
+<defs id="templates"/>
+
+<script>
+
+new Symbols().use("grid_1","translate(0,0)"); 
+
+</script>
+
+
+</svg>
