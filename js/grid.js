@@ -131,31 +131,19 @@ Symbols.prototype.use = function(href,transform)
 Symbols.prototype.createAbstractGrid = function(x,y,height,width,AmountX,AmountY)
 {
 
-//x,y,height,width,AmountX,AmountY
 
-	// var x = this.getX();
-	// var y = this.getY();
-	// var height = this.getHeight();
-	// var width = this.getWidth();
-	// var AmountX = this.getAmountX();
-	// var AmountY = this.getAmountY();
-	
-    //this.setGrid(this.getX(),this.getY(),
-	    //this.getHeight(),this.getWidth(),this.getAmountX(),this.getAmountY());
-    
-    
     var i,j,x1,y1,x2,y2;
     
     var offset = 1;
-    var border = 0;
+//    var border = 0;
     var all = 0;
 
-    if (offset == 1) {border = 0;}
-    if (border == 1) {offset = 0;}
+  //  if (offset == 1) {border = 0;}
+  //   if (border == 1) {offset = 0;}
     
 
 // Vertical
-for (i=offset;i < (AmountY+border) ;i++) {
+for (i=offset;i <= (AmountY) ;i++) {
 
 x1 = (x+((width/AmountX)*i));
 y1 = y;
@@ -166,12 +154,11 @@ y2 = (y+height);
 this.grid[all] = {x1: x1,y1: y1,x2: x2,y2: y2};
 all++; 
 }
- 
- 
+
  offset = 1;
 
 // Horizontal
-for (i=offset;i < (AmountY+border) ;i++) {
+for (i=offset;i <= (AmountX) ;i++) {
 
 
 x1 = x;
@@ -183,8 +170,6 @@ y2 = ((y+height/AmountY)*i);
 this.grid[all] = {x1: x1,y1: y1,x2: x2,y2: y2};
 all++;
 }
-    
-    
 
 }
 

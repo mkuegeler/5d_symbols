@@ -6,7 +6,7 @@
 function init (evt) {
 
 // id,x,y,height,width,AmountX,AmountY,style	
-new Symbols().Grid("grid_1",0,0, 480,640,15,15, "stroke:#e8e8e8;stroke-width:0.5px");
+new Symbols().Grid("grid_1",0,0, 480,640,10,10, "stroke:#000000;stroke-width:0.5px");
 
 
 
