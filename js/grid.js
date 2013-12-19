@@ -1,5 +1,5 @@
 /**
- * template.js
+ * grid.js
 
  * Symbol library 1.0
  * Michael Kuegeler 12/2013
@@ -134,42 +134,73 @@ Symbols.prototype.createAbstractGrid = function(x,y,height,width,AmountX,AmountY
 
     var i,j,x1,y1,x2,y2;
     
-    var offset = 1;
+//    var offset = 1;
 //    var border = 0;
     var all = 0;
 
   //  if (offset == 1) {border = 0;}
   //   if (border == 1) {offset = 0;}
     
-
+    
+    
 // Vertical
-for (i=offset;i <= (AmountY) ;i++) {
+for (i=0;i <= (AmountY) ;i++) {
 
-x1 = (x+((width/AmountX)*i));
+x1 = (x+((width/AmountY)*i));
 y1 = y;
 
-x2 = (x+((width/AmountX)*i));
+x2 = x1;
 y2 = (y+height);
 
 this.grid[all] = {x1: x1,y1: y1,x2: x2,y2: y2};
 all++; 
 }
 
- offset = 1;
-
 // Horizontal
-for (i=offset;i <= (AmountX) ;i++) {
+for (i=0;i <= (AmountX) ;i++) {
 
 
 x1 = x;
-y1 = (y+((height/AmountY)*i));
+y1 = (y+((height/AmountX)*i));
 
 x2 = (x+width);
-y2 = ((y+height/AmountY)*i);
+y2 = y1;
 
 this.grid[all] = {x1: x1,y1: y1,x2: x2,y2: y2};
 all++;
 }
+
+// previous version
+/////////////////////////////////////////
+
+// Vertical
+// for (i=0;i <= (AmountY) ;i++) {
+
+// x1 = (x+((width/AmountX)*i));
+// y1 = y;
+
+// x2 = (x+((width/AmountX)*i));
+// y2 = (y+height);
+
+// this.grid[all] = {x1: x1,y1: y1,x2: x2,y2: y2};
+// all++; 
+// }
+
+// offset = 1;
+
+// Horizontal
+// for (i=0;i <= (AmountX) ;i++) {
+
+
+// x1 = x;
+// y1 = (y+((height/AmountY)*i));
+
+// x2 = (x+width);
+// y2 = ((y+height/AmountY)*i);
+
+// this.grid[all] = {x1: x1,y1: y1,x2: x2,y2: y2};
+// all++;
+// }
 
 }
 
@@ -179,7 +210,7 @@ all++;
 //Create the object: Grid
 ///////////////////////////////////////////////////////////////////////////////
 
-Symbols.prototype.Grid = function(id,x,y,height,width,AmountX,AmountY,style)
+Symbols.prototype.define = function(id,x,y,height,width,AmountX,AmountY,style)
 {
 
     var symbol = document.createElementNS(this.getNS(),"symbol"); 
