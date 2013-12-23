@@ -9,7 +9,7 @@
  * 
  */
 ///////////////////////////////////////////////////////////////////////////////
-function Symbols ()
+function Grid ()
 {
 	
 	
@@ -32,54 +32,54 @@ function Symbols ()
 // Global functions used in symbol libraries
 ///////////////////////////////////////////////////////////////////////////////
 
-Symbols.prototype.setNS = function(value)
+Grid.prototype.setNS = function(value)
 {
             this.xmlns = value;
 }
-Symbols.prototype.getNS = function()
+Grid.prototype.getNS = function()
 {
             return this.xmlns;
 } 
 ///////////////////////////////////////////////////////////////////////////////
 
-Symbols.prototype.setxlinkNS = function(value)
+Grid.prototype.setxlinkNS = function(value)
 {
             this.xlinkNS = value;
 }
-Symbols.prototype.getxlinkNS = function()
+Grid.prototype.getxlinkNS = function()
 {
             return this.xlinkNS;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 
-Symbols.prototype.setID = function(value)
+Grid.prototype.setID = function(value)
 {
             this.id = value;
 }
-Symbols.prototype.getID = function()
+Grid.prototype.getID = function()
 {
             return this.id;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 
-Symbols.prototype.setLayer = function(value)
+Grid.prototype.setLayer = function(value)
 {
             this.layer = value;
 }
-Symbols.prototype.getLayer = function()
+Grid.prototype.getLayer = function()
 {
             return this.layer;
 }
 ///////////////////////////////////////////////////////////////////////////////
 
-Symbols.prototype.setOffset = function(value)
+Grid.prototype.setOffset = function(value)
 {
             this.offset = value;
 
 }
-Symbols.prototype.getOffset = function()
+Grid.prototype.getOffset = function()
 {
             return this.offset;
 }
@@ -87,14 +87,14 @@ Symbols.prototype.getOffset = function()
 // creates a list of abstract grid points (horizontal and vertical)
 // returns a hash array with two coordinates: Start and end of a line
 
-Symbols.prototype.setGrid = function(value)
+Grid.prototype.setGrid = function(value)
 {
             
 	this.grid = value;
 
 }
 ///////////////////////////////////////////////////////////////////////////////
-Symbols.prototype.getGrid = function()
+Grid.prototype.getGrid = function()
 {
             return this.grid;
 }
@@ -105,7 +105,7 @@ Symbols.prototype.getGrid = function()
 // Create a "Use" element
 ///////////////////////////////////////////////////////////////////////////////
 
-Symbols.prototype.use = function(href,transform)
+Grid.prototype.use = function(href,transform)
 {
 	
 	var use = document.getElementById(href);	
@@ -128,21 +128,12 @@ Symbols.prototype.use = function(href,transform)
 // Support function: Abstract Grid
 ///////////////////////////////////////////////////////////////////////////////
 
-Symbols.prototype.createAbstractGrid = function(x,y,height,width,AmountX,AmountY)
+Grid.prototype.abstract = function(x,y,width,height,AmountX,AmountY)
 {
 
+var i,j,x1,y1,x2,y2;
+var all = 0;
 
-    var i,j,x1,y1,x2,y2;
-    
-//    var offset = 1;
-//    var border = 0;
-    var all = 0;
-
-  //  if (offset == 1) {border = 0;}
-  //   if (border == 1) {offset = 0;}
-    
-    
-    
 // Vertical
 for (i=0;i <= (AmountY) ;i++) {
 
@@ -210,7 +201,7 @@ all++;
 //Create the object: Grid
 ///////////////////////////////////////////////////////////////////////////////
 
-Symbols.prototype.define = function(id,x,y,height,width,AmountX,AmountY,style)
+Grid.prototype.define = function(id,x,y,height,width,AmountX,AmountY,style)
 {
 
     var symbol = document.createElementNS(this.getNS(),"symbol"); 
@@ -220,7 +211,7 @@ Symbols.prototype.define = function(id,x,y,height,width,AmountX,AmountY,style)
     
     var lines = new Array();
    
-        this.createAbstractGrid(x,y,height,width,AmountX,AmountY);
+        this.abstract(x,y,height,width,AmountX,AmountY);
 
 
  
@@ -254,14 +245,14 @@ Symbols.prototype.define = function(id,x,y,height,width,AmountX,AmountY,style)
 ///////////////////////////////////////////////////////////////////////////////
 // initialize the library in SVG file
 // get parameters and create initial objects
-// init can be called in svg root node: onload="new Symbols().init(evt)"
+// init can be called in svg root node: onload="new Grid().init(evt)"
 // currently, init() is defined in the svg file directly.
 ///////////////////////////////////////////////////////////////////////////////
-Symbols.prototype.init = function()
+Grid.prototype.init = function()
 {
 
 // example:
-// new Symbols().grid("grid_1",0,0, 480,640,5,5 "stroke:#000000;stroke-width:1px");
+// new Grid().grid("grid_1",0,0, 480,640,5,5 "stroke:#000000;stroke-width:1px");
 
 
 }

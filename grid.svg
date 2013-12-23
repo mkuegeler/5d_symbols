@@ -1,20 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg" onload="init(evt)">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg" onload="init(evt)" width="100%" height="100%">
 
 <script type="text/ecmascript" xlink:href="js/grid.js"/>
 <script type="text/ecmascript">
 ///////////////////////////////////////////////////////////////////////////////
+
+
 function init (evt) {
 
-Grid = new Symbols();
+
+
+width = window.innerWidth,
+height = window.innerHeight;
+
+// width = document.getElementById('svg').getAttribute("width");
+// height = document.getElementById('svg').getAttribute("height");
+
+// alert (width);
+
+Grid = new Grid();
 
 // id,x,y,height,width,AmountX,AmountY,style	
 // new Symbols().Grid("grid_1",0,0, 480,640,1,1, "stroke:#000000;stroke-width:0.5px");
 
-Grid.define("grid_1",0,0, 480,640,12,10, "stroke:#000000;stroke-width:0.5px");
+Grid.define("grid_1",0,0, width,height,12,20, "stroke:#000000;stroke-width:0.5px");
 Grid.use("grid_1","translate(0,0)"); 
+
+
+
 
 }
 ///////////////////////////////////////////////////////////////////////////////
+
+
+
 </script>
 
 <defs id="templates"/>
