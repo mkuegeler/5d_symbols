@@ -114,14 +114,16 @@ Symbols.prototype.simpleCircleSymbol = function(id,radius,style)
 	
 
 	var group = document.createElementNS(this.getNS(),"g");
+	
+	    // radius = (radius - (radius/10));
 
 	    //group.setAttribute("id",id); 
-	    group.setAttribute("transform","translate("+(radius+offset)+","+(radius+offset)+")");
+	    //group.setAttribute("transform","translate("+(radius+offset)+","+(radius+offset)+")");
 	
     var circle = document.createElementNS(this.getNS(),"circle");
 
-        circle.setAttribute("cx",0); 
-        circle.setAttribute("cy",0);                
+        circle.setAttribute("cx",radius); 
+        circle.setAttribute("cy",radius);                
         circle.setAttribute("r",radius);
         circle.setAttribute("style",style);		
 	    // circle.setAttribute("class","symbol_1");		
@@ -192,7 +194,7 @@ Symbols.prototype.combinedSquareCircleSymbol = function(id,radius,style_1,style_
 	var group = document.createElementNS(this.getNS(),"g");
 
 	     
-	    group.setAttribute("transform","translate("+(radius-offset)+","+(radius-offset)+")");
+	    //group.setAttribute("transform","translate("+(radius-offset)+","+(radius-offset)+")");
 	
     var rect = document.createElementNS(this.getNS(),"rect");
 
@@ -202,8 +204,8 @@ Symbols.prototype.combinedSquareCircleSymbol = function(id,radius,style_1,style_
 	    rect.setAttribute("width",dim);
         rect.setAttribute("height",dim); 
 
-        rect.setAttribute("rx",(dim/8));
-		rect.setAttribute("ry",(dim/8));
+        // rect.setAttribute("rx",(dim/8));
+		// rect.setAttribute("ry",(dim/8));
 		
   	var circle = document.createElementNS(this.getNS(),"circle");
 

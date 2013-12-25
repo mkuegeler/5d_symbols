@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg" onload="init(evt)"  width="1000" height="1000">
+
+<script type="text/ecmascript" xlink:href="js/grid.js"/>
+<script type="text/ecmascript" xlink:href="js/symbols.js"/>
+
+<script type="text/ecmascript">
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+function init (evt) {
+
+
+width = document.getElementById('svg').getAttribute("width");
+height = document.getElementById('svg').getAttribute("height");
+
+offset = 50;
+
+Grid = new Grid();
+Symbols = new Symbols();
+
+// id,x,y,height,width,AmountX,AmountY,style	
+// new Symbols().Grid("grid_1",0,0, 480,640,1,1, "stroke:#000000;stroke-width:0.5px");
+
+Grid.define("grid_1",0,0, width,height,10,10, "stroke:#000000;stroke-width:0.1px;");
+
+Symbols.simpleCircleSymbol("symbol_1",offset,"stroke:#138788;stroke-width:5px;fill:#00ffcc");
+
+Symbols.simpleCircleSymbol("symbol_2",offset,"stroke:#00ff00;stroke-width:2px;fill:#ffcc00");
+
+Symbols.simpleCircleSymbol("symbol_3",offset,"stroke:#00ffff;stroke-width:2px;fill:#ffffcc");
+
+Symbols.simpleSquareSymbol("symbol_4",offset,"stroke:#ff0000;stroke-width:1px;fill:none");
+
+Symbols.combinedSquareCircleSymbol("symbol_5",offset,"stroke:#ff0000;stroke-width:1px;fill:none","stroke:#0000ff;stroke-width:1px;fill:none");
+
+
+Grid.use("grid_1","translate(0,0)"); 
+
+Symbols.use("symbol_5","translate("+(width/2)+",0)"); 
+
+Symbols.use("symbol_5","translate("+(width/2)+","+(height/4)+")"); 
+
+
+
+
+}
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+</script>
+
+<defs id="templates"/>
+
+</svg>
