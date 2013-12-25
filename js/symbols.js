@@ -152,7 +152,7 @@ Symbols.prototype.simpleSquareSymbol = function(id,radius,style)
 	var group = document.createElementNS(this.getNS(),"g");
 
 	     
-	    group.setAttribute("transform","translate("+(radius-offset)+","+(radius-offset)+")");
+	    // group.setAttribute("transform","translate("+(radius-offset)+","+(radius-offset)+")");
 	
     var rect = document.createElementNS(this.getNS(),"rect");
 
@@ -180,7 +180,7 @@ Symbols.prototype.combinedSquareCircleSymbol = function(id,radius,style_1,style_
 {
     //var offset = (radius*0.75); 
 
-    var offset = (radius*((0.5)+this.getOffset())); 
+    // var offset = (radius*((0.5)+this.getOffset())); 
     
     var dim = (radius*2); 
     
@@ -376,6 +376,49 @@ Symbols.prototype.singleLetterSymbol_C = function(id,radius,style_1,style_2)
 }
   
 ///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+// process diagrams
+Symbols.prototype.ProcessFunctionElement = function(id,radius,style)
+{
+    //var offset = (radius*0.75); 
+
+    // var offset = (radius*((0.5)+this.getOffset())); 
+    
+    // offset between outer rectangle  and inner circle
+    var factor = 0.1;
+    
+    var dim = (radius*2);
+    
+    // var dim = (radius-(radius*factor));
+	
+	var symbol = document.createElementNS(this.getNS(),"symbol"); 
+	    symbol.setAttribute("id",id);	
+	
+
+	var group = document.createElementNS(this.getNS(),"g");
+
+	     
+	    // group.setAttribute("transform","translate("+(radius-offset)+","+(radius-offset)+")");
+	
+    var rect = document.createElementNS(this.getNS(),"rect");
+
+        rect.setAttribute("x",0);
+        rect.setAttribute("y",0);
+
+	    rect.setAttribute("width",dim);
+        rect.setAttribute("height",dim); 
+
+        rect.setAttribute("rx",5);
+		rect.setAttribute("ry",5);
+		
+	    rect.setAttribute("style",style);	
+	    group.appendChild(rect);	
+	
+	    symbol.appendChild(group);
+	    			
+        document.getElementById(this.getLayer()).appendChild(symbol);
+     
+}
  
 ///////////////////////////////////////////////////////////////////////////////
 // The SYMBOL Library: End
