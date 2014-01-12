@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200" height="200" viewBox="0, 0, 200, 200">
+   
+   <g id="Symbol" style="visibility:visible;">
+   
+   <g id="04" style="visibility:visible;">   
+        <!-- boundary box --> 
+        
+        <line x1="200" y1="200" x2="0" y2="200" stroke="#cccccc" stroke-width="1"/>        
+        
+        <line x1="0" y1="0" x2="200" y2="0" stroke="#cccccc" stroke-width="1"/>
+        
+        <line x1="0" y1="0" x2="0" y2="200" stroke="#cccccc" stroke-width="1"/>
+        
+        <line x1="200" y1="200" x2="200" y2="0" stroke="#cccccc" stroke-width="1"/>
+        
+     </g>   
+   
+   
+   <g id="01">
+        <circle cx="100" cy="100" r="50" stroke="black" stroke-width="3" fill="red" /> 
+   </g>
+   <g id="02" style="visibility:hidden;">     
+        <!-- crossing lines --> 
+        
+        <line x1="0" y1="0" x2="200" y2="200" stroke="black" stroke-width="1"/>
+        
+        <line x1="0" y1="200" x2="200" y2="0" stroke="black" stroke-width="1"/>
+        
+        <line x1="0" y1="100" x2="200" y2="100" stroke="black" stroke-width="1"/>
+        
+        <line x1="100" y1="200" x2="100" y2="0" stroke="black" stroke-width="1"/>
+   
+     </g> 
+     
+     <g id="03" style="visibility:visible;">     
+        <!-- orientation lines --> 
+        
+        <line x1="0" y1="0" x2="65" y2="65" stroke="black" stroke-width="1"/>
+        <line x1="135" y1="135" x2="200" y2="200" stroke="black" stroke-width="1"/>        
+        
+        <line x1="135" y1="65" x2="200" y2="0" stroke="black" stroke-width="1"/>
+        <line x1="0" y1="200" x2="65" y2="135" stroke="black" stroke-width="1"/>        
+        
+        <line x1="0" y1="100" x2="50" y2="100" stroke="black" stroke-width="1"/>
+        <line x1="150" y1="100" x2="200" y2="100" stroke="black" stroke-width="1"/>
+        
+        <line x1="100" y1="200" x2="100" y2="150" stroke="black" stroke-width="1"/>
+        <line x1="100" y1="0" x2="100" y2="50" stroke="black" stroke-width="1"/>
+       
+    </g>  
+    
+   </g>       
+  
+  <defs/>
+</svg>
