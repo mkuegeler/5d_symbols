@@ -43,47 +43,113 @@
             <line x1="5" y1="10" x2="5" y2="140" stroke="#ff0000" />
          </g>
          
+         <g transform="translate(5,202.5) rotate(225)">
+            <polygon points="0,10 5,0 10,10" fill="#000000"/>
+            <line x1="5" y1="10" x2="5" y2="140" stroke="#ff0000" />
+         </g>
          
-         
-         <line x1="0" y1="0" x2="65" y2="65" stroke="black" stroke-width="1"/>
-         <line x1="135" y1="135" x2="200" y2="200" stroke="black" stroke-width="1"/>        
-        
-         <line x1="135" y1="65" x2="200" y2="0" stroke="black" stroke-width="1"/>
-         <line x1="0" y1="200" x2="65" y2="135" stroke="black" stroke-width="1"/>        
-        
-         <line x1="0" y1="100" x2="50" y2="100" stroke="black" stroke-width="1"/>
-         <line x1="150" y1="100" x2="200" y2="100" stroke="black" stroke-width="1"/>
-        
-         <line x1="100" y1="200" x2="100" y2="150" stroke="black" stroke-width="1"/>
-         <line x1="100" y1="0" x2="100" y2="50" stroke="black" stroke-width="1"/>
-         
+         <g transform="translate(-2.5,5) rotate(315)">
+            <polygon points="0,10 5,0 10,10" fill="#000000"/>
+            <line x1="5" y1="10" x2="5" y2="140" stroke="#ff0000" />
+         </g>
+    
          
     
+   </symbol>
+   
+   <symbol id="arrow_pattern_2">
+       
+         
+         
+         <g transform="translate(95,0)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(200,95) rotate(90)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(105,200) rotate(180)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(0,105) rotate(270)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(195,-2.5) rotate(45)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(202.5,195) rotate(135)">
+           <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(5,202.5) rotate(225)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(-2.5,5) rotate(315)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff" style="visibility:hidden;"/>
+         <circle cx="100" cy="100" r="50" stroke="black" stroke-width="2" fill="#ff0000" /> 
+         
+         
+ 
+   </symbol>
+   
+   <symbol id="arrow_pattern_3">
+         
+         <g transform="translate(105,200) rotate(180)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         
+         <rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff" style="visibility:hidden;"/>
+         <circle cx="100" cy="51" r="50" stroke="black" stroke-width="2" fill="#ff00ff" /> 
+         
+         
+ 
+   </symbol>
+   
+   <symbol id="arrow_pattern_4">
+         
+         <g transform="translate(200,45) rotate(90)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         
+         <rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff" style="visibility:hidden;"/>
+         <circle cx="100" cy="51" r="50" stroke="black" stroke-width="2" fill="#ccffff" onclick="alert('Message!')"/> 
+         
+         
+ 
    </symbol>
    
    
    
   </defs>
   
-   <g transform="translate(400,400)" style="visibility:hidden;">
-   
-      <rect x="-100" y="-100" width="200" height="200" fill="none" stroke="#0000ff"/>
-      
-      <circle cx="0" cy="0" r="50" stroke="black" stroke-width="1" fill="none" /> 
-      
-      <use xlink:href="#arrow" transform="translate(-5,-100) rotate(0)" />
-      <use xlink:href="#arrow" transform="translate(68,-75) rotate(45)" />
-      
-      <use xlink:href="#arrow" transform="translate(100,-5) rotate(90)" />
-      
-      <use xlink:href="#arrow" transform="translate(5,100) rotate(180)" />
-      <use xlink:href="#arrow" transform="translate(-100,5) rotate(270)" />
-   </g>
+  <g id="graph" transform="translate(0,0) scale(2)">
    
    <g transform="translate(0,0)" style="visibility:visible;">
-      <use xlink:href="#arrow_pattern"  />
+      <use xlink:href="#arrow_pattern_2"  />
    </g>
    
+   <g transform="translate(200,0)" style="visibility:visible;">
+      <use xlink:href="#arrow_pattern_2"  />
+   </g>
    
+   <g transform="translate(0,200)" style="visibility:visible;">
+      <use xlink:href="#arrow_pattern_3"  />
+   </g>
+   
+   <g transform="translate(200,200)" style="visibility:visible;">
+      <use xlink:href="#arrow_pattern_4"  />
+   </g>
+   
+ </g>   
    
 </svg>
