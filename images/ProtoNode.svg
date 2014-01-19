@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="2000" height="2000" viewBox="0, 0, 2000, 2000">
+
+<style type="text/css" >
+<![CDATA[
+
+circle.NodeVisible { visibility: visible; }
+circle.NodeHidden { visibility: hidden; }
+       
+  
+
+]]>
+</style>
+
+
+  
+<defs>
+<symbol id="arrow">
+      <polygon points="0,10 5,0 10,10" fill="#000000" />
+         <line x1="5" y1="10" x2="5" y2="100" stroke="#000000" />
+</symbol>
+   
+<symbol id="arrow_pattern_0">
+       
+<!-- All arrows and node positions with boundary box-->
+
+<!-- boundary box-->
+<rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff" style="visibility:visible;"/>       
+
+<!-- Arrows -->         
+<g transform="translate(95,0)"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(200,95) rotate(90)"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(105,200) rotate(180)"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(0,105) rotate(270)"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(195,-2.5) rotate(45)"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(202.5,195) rotate(135)"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(5,202.5) rotate(225)"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(-2.5,5) rotate(315)"><use xlink:href="#arrow" /></g>
+         
+         
+<!-- Node: Center -->
+<circle cx="100" cy="100" r="50" stroke="black" stroke-width="2" fill="#ff0000" class="NodeHidden"/> 
+
+<!-- Node: middle / top -->         
+<circle cx="100" cy="50" r="50" stroke="black" stroke-width="2" fill="#ff00ff" /> 
+
+<!-- Node: left / top -->  
+<circle cx="50" cy="50" r="50" stroke="black" stroke-width="2" fill="#ccffff" /> 
+
+<!-- Node: right / top --> 
+<circle cx="150" cy="50" r="50" stroke="black" stroke-width="2" fill="#ccffff" /> 
+
+<!-- Node: middle / bottom --> 
+<circle cx="100" cy="150" r="50" stroke="black" stroke-width="2" fill="#cc00ff" /> 
+
+<!-- Node: left / bottom --> 
+<circle cx="50" cy="150" r="50" stroke="black" stroke-width="2" fill="#cc00ff" />
+
+<!-- Node: right / bottom --> 
+<circle cx="150" cy="150" r="50" stroke="black" stroke-width="2" fill="#cc00ff" />
+
+<!-- Node: left / left --> 
+<circle cx="50" cy="100" r="50" stroke="black" stroke-width="2" fill="#cc00ff" />
+
+<!-- Node: right / right --> 
+<circle cx="150" cy="100" r="50" stroke="black" stroke-width="2" fill="#cc00ff" class="NodeHidden"/>
+
+ 
+</symbol>
+   
+</defs>
+  
+<g id="graph" transform="translate(0,0) scale(1)">
+   
+   <g transform="translate(0,0)" style="visibility:visible;">
+      <use xlink:href="#arrow_pattern_0"  />
+</g>
+   
+   
+</g>
+   
+   
+</svg>
