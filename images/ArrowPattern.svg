@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="2000" height="2000" viewBox="0, 0, 2000, 2000">
+  
+  <defs>
+   <symbol id="arrow">
+           <polygon points="0,10 5,0 10,10" fill="#000000" />
+         <line x1="5" y1="10" x2="5" y2="100" stroke="#000000" />
+   </symbol>
+   
+   <!-- All arrows including boundary box-->
+   <symbol id="arrow_pattern_all">
+       
+         <rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff"/>
+         <circle cx="100" cy="100" r="50" stroke="black" stroke-width="1" fill="none" /> 
+         
+         <g transform="translate(95,0)">
+            <polygon points="0,10 5,0 10,10" fill="#000000"/>
+            <line x1="5" y1="10" x2="5" y2="100" stroke="#ff0000" />
+         </g>
+         
+         <g transform="translate(200,95) rotate(90)">
+            <polygon points="0,10 5,0 10,10" fill="#000000"/>
+            <line x1="5" y1="10" x2="5" y2="100" stroke="#ff0000" />
+         </g>
+         
+         <g transform="translate(105,200) rotate(180)">
+            <polygon points="0,10 5,0 10,10" fill="#000000"/>
+            <line x1="5" y1="10" x2="5" y2="100" stroke="#ff0000" />
+         </g>
+         
+         <g transform="translate(0,105) rotate(270)">
+            <polygon points="0,10 5,0 10,10" fill="#000000"/>
+            <line x1="5" y1="10" x2="5" y2="100" stroke="#ff0000" />
+         </g>
+         
+         <g transform="translate(195,-2.5) rotate(45)">
+            <polygon points="0,10 5,0 10,10" fill="#000000"/>
+            <line x1="5" y1="10" x2="5" y2="140" stroke="#ff0000" />
+         </g>
+         
+         <g transform="translate(202.5,195) rotate(135)">
+            <polygon points="0,10 5,0 10,10" fill="#000000"/>
+            <line x1="5" y1="10" x2="5" y2="140" stroke="#ff0000" />
+         </g>
+         
+         <g transform="translate(5,202.5) rotate(225)">
+            <polygon points="0,10 5,0 10,10" fill="#000000"/>
+            <line x1="5" y1="10" x2="5" y2="140" stroke="#ff0000" />
+         </g>
+         
+         <g transform="translate(-2.5,5) rotate(315)">
+            <polygon points="0,10 5,0 10,10" fill="#000000"/>
+            <line x1="5" y1="10" x2="5" y2="140" stroke="#ff0000" />
+         </g>
+    
+   </symbol>
+   
+   <symbol id="arrow_pattern_0">
+       
+   <!-- All arrows without boundary box-->       
+         
+         <g transform="translate(95,0)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(200,95) rotate(90)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(105,200) rotate(180)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(0,105) rotate(270)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(195,-2.5) rotate(45)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(202.5,195) rotate(135)">
+           <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(5,202.5) rotate(225)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(-2.5,5) rotate(315)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff" style="visibility:hidden;"/>
+         <circle cx="100" cy="100" r="50" stroke="black" stroke-width="2" fill="#ff0000" /> 
+         
+         
+ 
+   </symbol>
+   
+   <symbol id="arrow_pattern_1">
+         
+         <g transform="translate(105,200) rotate(180)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         
+         <rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff" style="visibility:visible;"/>
+         <circle cx="100" cy="51" r="50" stroke="black" stroke-width="2" fill="#ff00ff" /> 
+ 
+   </symbol>
+   
+   <symbol id="arrow_pattern_2">
+         
+         <g transform="translate(200,45) rotate(90)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff" style="visibility:visible;"/>
+         <circle cx="51" cy="51" r="50" stroke="black" stroke-width="2" fill="#ccffff" onclick="alert('Message!')"/> 
+ 
+   </symbol>
+   
+   <symbol id="arrow_pattern_3">
+         
+         <g transform="translate(200,45) rotate(90)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff" style="visibility:visible;"/>
+         <circle cx="100" cy="51" r="50" stroke="black" stroke-width="2" fill="#ccffff" onclick="alert('Message!')"/> 
+ 
+   </symbol>
+   
+   <symbol id="arrow_pattern_4">
+         
+         <g transform="translate(200,45) rotate(90)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <g transform="translate(0,55) rotate(270)">
+            <use xlink:href="#arrow" />
+         </g>
+         
+         <rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff" style="visibility:visible;"/>
+         <circle cx="100" cy="51" r="50" stroke="black" stroke-width="2" fill="#ff0000" onclick="alert('Message!')"/> 
+ 
+   </symbol>
+   
+   
+   
+  </defs>
+  
+<g id="graph" transform="translate(0,0) scale(1)">
+   
+   <g transform="translate(0,0)" style="visibility:visible;">
+      <use xlink:href="#arrow_pattern_1"  />
+   </g>
+   
+   <g transform="translate(200,0)" style="visibility:visible;">
+      <use xlink:href="#arrow_pattern_2"  />
+   </g>
+   
+   <g transform="translate(400,0)" style="visibility:visible;">
+      <use xlink:href="#arrow_pattern_3"  />
+   </g>
+   
+   <g transform="translate(600,0)" style="visibility:visible;">
+      <use xlink:href="#arrow_pattern_4"  />
+   </g>
+   
+   
+   
+</g>
+   
+   
+</svg>
