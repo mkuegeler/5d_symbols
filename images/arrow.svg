@@ -155,7 +155,7 @@
 <g id="graph" transform="translate(0,0) scale(1)">
    
    <g transform="translate(0,0)" style="visibility:visible;">
-      <use xlink:href="#arrow_pattern_1"  />
+      <use xlink:href="#arrow_pattern_0"  />
    </g>
    
    <g transform="translate(200,0)" style="visibility:visible;">
