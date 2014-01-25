@@ -5,10 +5,20 @@
 <style type="text/css" >
 <![CDATA[
 
-circle.NodeVisible { visibility: visible; }
-circle.NodeHidden { visibility: hidden; }
-       
-  
+
+circle.NodeVisible { visibility: visible }
+circle.NodeHidden { visibility: hidden }
+
+
+/* Style definition of node elements */
+rect.box { fill:none; stroke:#0000ff }
+circle.Node { stroke:#000000; stroke-width:1; fill:#e8e8e8 }       
+line.Arrow  { stroke:#000000; stroke-width:1 }
+polygon.Arrow { fill:#ff0000 }
+
+
+
+
 
 ]]>
 </style>
@@ -17,71 +27,71 @@ circle.NodeHidden { visibility: hidden; }
   
 <defs>
 <symbol id="arrow">
-      <polygon points="0,10 5,0 10,10" fill="#000000" />
-         <line x1="5" y1="10" x2="5" y2="100" stroke="#000000" />
+      <polygon points="0,10 5,0 10,10" class="Arrow" />
+         <line x1="5" y1="10" x2="5" y2="100" class="Arrow" />
 </symbol>
    
-<symbol id="arrow_pattern_0">
+<symbol id="arrow_pattern">
        
 <!-- All arrows and node positions with boundary box-->
 
 <!-- boundary box-->
-<rect x="0" y="0" width="200" height="200" fill="none" stroke="#0000ff" style="visibility:visible;"/>       
+<rect x="0" y="0" width="200" height="200" class="box" style="visibility:visible;"/>       
 
 <!-- Arrows -->         
-<g transform="translate(95,0)"><use xlink:href="#arrow" /></g>
+<g transform="translate(95,0)" style="visibility: visible"><use xlink:href="#arrow" /></g>
          
-<g transform="translate(200,95) rotate(90)"><use xlink:href="#arrow" /></g>
+<g transform="translate(200,95) rotate(90)" style="visibility: hidden"><use xlink:href="#arrow" /></g>
          
-<g transform="translate(105,200) rotate(180)"><use xlink:href="#arrow" /></g>
+<g transform="translate(105,200) rotate(180)" style="visibility: hidden"><use xlink:href="#arrow" /></g>
          
-<g transform="translate(0,105) rotate(270)"><use xlink:href="#arrow" /></g>
+<g transform="translate(0,105) rotate(270)" style="visibility: hidden"><use xlink:href="#arrow" /></g>
          
-<g transform="translate(195,-2.5) rotate(45)"><use xlink:href="#arrow" /></g>
+<g transform="translate(195,-2.5) rotate(45)" style="visibility: hidden"><use xlink:href="#arrow" /></g>
          
-<g transform="translate(202.5,195) rotate(135)"><use xlink:href="#arrow" /></g>
+<g transform="translate(202.5,195) rotate(135)" style="visibility: hidden"><use xlink:href="#arrow" /></g>
          
-<g transform="translate(5,202.5) rotate(225)"><use xlink:href="#arrow" /></g>
+<g transform="translate(5,202.5) rotate(225)" style="visibility: hidden"><use xlink:href="#arrow" /></g>
          
-<g transform="translate(-2.5,5) rotate(315)"><use xlink:href="#arrow" /></g>
+<g transform="translate(-2.5,5) rotate(315)" style="visibility: hidden"><use xlink:href="#arrow" /></g>
          
          
 <!-- Node: Center -->
-<circle cx="100" cy="100" r="50" stroke="black" stroke-width="2" fill="#ff0000" class="NodeHidden"/> 
+<circle cx="100" cy="100" r="50" class="Node" style="visibility: visible"/> 
 
 <!-- Node: middle / top -->         
-<circle cx="100" cy="50" r="50" stroke="black" stroke-width="2" fill="#ff00ff" /> 
+<circle cx="100" cy="50" r="50" class="Node" style="visibility: hidden"/> 
 
 <!-- Node: left / top -->  
-<circle cx="50" cy="50" r="50" stroke="black" stroke-width="2" fill="#ccffff" /> 
+<circle cx="50" cy="50" r="50" class="Node" style="visibility: hidden"/> 
 
 <!-- Node: right / top --> 
-<circle cx="150" cy="50" r="50" stroke="black" stroke-width="2" fill="#ccffff" /> 
+<circle cx="150" cy="50" r="50" class="Node" style="visibility: hidden"/> 
 
 <!-- Node: middle / bottom --> 
-<circle cx="100" cy="150" r="50" stroke="black" stroke-width="2" fill="#cc00ff" /> 
+<circle cx="100" cy="150" r="50" class="Node" style="visibility: hidden"/> 
 
 <!-- Node: left / bottom --> 
-<circle cx="50" cy="150" r="50" stroke="black" stroke-width="2" fill="#cc00ff" />
+<circle cx="50" cy="150" r="50" class="Node" style="visibility: hidden"/>
 
 <!-- Node: right / bottom --> 
-<circle cx="150" cy="150" r="50" stroke="black" stroke-width="2" fill="#cc00ff" />
+<circle cx="150" cy="150" r="50" class="Node" style="visibility: hidden"/>
 
 <!-- Node: left / left --> 
-<circle cx="50" cy="100" r="50" stroke="black" stroke-width="2" fill="#cc00ff" />
+<circle cx="50" cy="100" r="50" class="Node" style="visibility: hidden"/>
 
 <!-- Node: right / right --> 
-<circle cx="150" cy="100" r="50" stroke="black" stroke-width="2" fill="#cc00ff" class="NodeHidden"/>
+<circle cx="150" cy="100" r="50" class="Node" style="visibility: hidden"/>
 
  
 </symbol>
    
 </defs>
   
-<g id="graph" transform="translate(0,0) scale(1)">
+<g id="graph" transform="translate(0,0) scale(4)">
    
-   <g transform="translate(0,0)" style="visibility:visible;">
-      <use xlink:href="#arrow_pattern_0"  />
+   <g id="pattern_0" transform="translate(0,0)">
+      <use xlink:href="#arrow_pattern"  />
 </g>
    
    
