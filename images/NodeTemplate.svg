@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="2000" height="2000" viewBox="0, 0, 2000, 2000">
+
+<style type="text/css" >
+<![CDATA[
+
+
+
+/* Core style definition of node elements */
+rect.Box { fill:none; stroke:#0000ff; stroke-width:0.5 }
+circle.Node { stroke:#000000; stroke-width:1; fill:#e8e8e8 }       
+line.Arrow  { stroke:#000000; stroke-width:1 }
+polygon.Arrow { fill:#ff0000 }
+
+
+/* node variants in groups  */
+/* ------------------------------------ */
+
+/* pattern_0 */
+
+g.pattern_0-box     { visibility: visible }
+
+g.pattern_0-arrow_1 { visibility: visible }
+g.pattern_0-arrow_2 { visibility: hidden }
+g.pattern_0-arrow_3 { visibility: hidden }
+g.pattern_0-arrow_4 { visibility: hidden }
+g.pattern_0-arrow_5 { visibility: hidden }
+g.pattern_0-arrow_6 { visibility: hidden }
+g.pattern_0-arrow_7 { visibility: hidden }
+g.pattern_0-arrow_8 { visibility: hidden }
+
+g.pattern_0-node_1  { visibility: visible }
+g.pattern_0-node_2  { visibility: hidden }
+g.pattern_0-node_3  { visibility: hidden }
+g.pattern_0-node_4  { visibility: hidden }
+g.pattern_0-node_5  { visibility: hidden }
+g.pattern_0-node_6  { visibility: hidden }
+g.pattern_0-node_7  { visibility: hidden }
+g.pattern_0-node_8  { visibility: hidden }
+g.pattern_0-node_9  { visibility: hidden }
+
+/* ------------------------------------ */
+
+
+
+]]>
+</style>
+
+
+  
+<defs>
+<symbol id="arrow">
+      <polygon points="0,10 5,0 10,10" class="Arrow" />
+         <line x1="5" y1="10" x2="5" y2="100" class="Arrow" />
+</symbol>
+
+
+<!-- //// pattern_0 ////////////////////////////////////////////////////////////////////////////// -->
+   
+<symbol id="pattern_0">
+       
+<!-- All arrows and node positions with boundary box-->
+
+<!-- boundary box-->
+<g class="pattern_0-box"><rect x="0" y="0" width="200" height="200" class="Box"/></g>
+
+<!-- Arrows -->         
+<g class="pattern_0-arrow_1" transform="translate(95,0)" ><use xlink:href="#arrow" /></g>
+
+<g class="pattern_0-arrow_2" transform="translate(195,-2.5) rotate(45)" ><use xlink:href="#arrow" /></g>
+         
+<g class="pattern_0-arrow_3" transform="translate(200,95) rotate(90)" ><use xlink:href="#arrow" /></g>
+
+<g class="pattern_0-arrow_4" transform="translate(202.5,195) rotate(135)" ><use xlink:href="#arrow" /></g>
+         
+<g class="pattern_0-arrow_5" transform="translate(105,200) rotate(180)" ><use xlink:href="#arrow" /></g>
+
+<g class="pattern_0-arrow_6" transform="translate(5,202.5) rotate(225)" ><use xlink:href="#arrow" /></g>
+         
+<g class="pattern_0-arrow_7" transform="translate(0,105) rotate(270)" ><use xlink:href="#arrow" /></g>
+       
+<g class="pattern_0-arrow_8" transform="translate(-2.5,5) rotate(315)" ><use xlink:href="#arrow" /></g>
+         
+         
+<!-- Node: Center -->
+<g class="pattern_0-node_1"><circle cx="100" cy="100" r="50" class="Node"/></g>
+
+<!-- Node: middle / top -->
+<g class="pattern_0-node_2"><circle cx="100" cy="50" r="50" class="Node"/></g>
+
+<!-- Node: left / top -->  
+<g class="pattern_0-node_3"><circle cx="50" cy="50" r="50" class="Node"/></g>
+
+<!-- Node: right / top -->
+<g class="pattern_0-node_4"><circle cx="150" cy="50" r="50" class="Node"/></g>
+
+<!-- Node: middle / bottom -->
+<g class="pattern_0-node_5"><circle cx="100" cy="150" r="50" class="Node"/></g>
+
+<!-- Node: left / bottom --> 
+<g class="pattern_0-node_6"><circle cx="50" cy="150" r="50" class="Node"/></g>
+
+<!-- Node: right / bottom --> 
+<g class="pattern_0-node_7"><circle cx="150" cy="150" r="50" class="Node"/></g>
+
+<!-- Node: left / left -->
+<g class="pattern_0-node_8"><circle cx="50" cy="100" r="50" class="Node"/></g>
+
+<!-- Node: right / right -->
+<g class="pattern_0-node_9"><circle cx="150" cy="100" r="50" class="Node"/></g>
+
+</symbol>
+   
+<!-- //// pattern_0 ////////////////////////////////////////////////////////////////////////////// -->
+
+</defs>
+  
+<g id="graph" transform="translate(0,0) scale(2)">
+   
+   <g id="pattern_0_A" transform="translate(0,0)" onclick="alert(this.id)">   
+      <use xlink:href="#pattern_0"  />
+      <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Example A</text>
+   </g> 
+   
+   <g id="pattern_0_B" transform="translate(200,0)" onclick="alert(this.id)">   
+      <use xlink:href="#pattern_0"  />
+      <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Example B</text>
+   </g> 
+   
+     
+</g>
+   
+   
+</svg>

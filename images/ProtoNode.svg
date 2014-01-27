@@ -14,7 +14,10 @@ line.Arrow  { stroke:#000000; stroke-width:1 }
 polygon.Arrow { fill:#ff0000 }
 
 
-/* node variants in groups */
+/* node variants in groups  */
+/* ------------------------------------ */
+
+/* pattern_1 */
 
 g.pattern_1-box     { visibility: visible }
 
@@ -39,6 +42,8 @@ g.pattern_1-node_9  { visibility: hidden }
 
 /* ------------------------------------ */
 
+/* pattern_2 */
+
 g.pattern_2-box     { visibility: visible }
 
 g.pattern_2-arrow_1 { visibility: visible }
@@ -60,7 +65,30 @@ g.pattern_2-node_7  { visibility: hidden }
 g.pattern_2-node_8  { visibility: hidden }
 g.pattern_2-node_9  { visibility: hidden }
 
+/* ------------------------------------ */
 
+/* pattern_3 */
+
+g.pattern_3-box     { visibility: visible }
+
+g.pattern_3-arrow_1 { visibility: visible }
+g.pattern_3-arrow_2 { visibility: visible }
+g.pattern_3-arrow_3 { visibility: visible }
+g.pattern_3-arrow_4 { visibility: hidden }
+g.pattern_3-arrow_5 { visibility: hidden }
+g.pattern_3-arrow_6 { visibility: hidden }
+g.pattern_3-arrow_7 { visibility: hidden }
+g.pattern_3-arrow_8 { visibility: hidden }
+
+g.pattern_3-node_1  { visibility: visible }
+g.pattern_3-node_2  { visibility: hidden }
+g.pattern_3-node_3  { visibility: hidden }
+g.pattern_3-node_4  { visibility: hidden }
+g.pattern_3-node_5  { visibility: hidden }
+g.pattern_3-node_6  { visibility: hidden }
+g.pattern_3-node_7  { visibility: hidden }
+g.pattern_3-node_8  { visibility: hidden }
+g.pattern_3-node_9  { visibility: hidden }
 
 
 ]]>
@@ -191,6 +219,63 @@ g.pattern_2-node_9  { visibility: hidden }
    
 <!-- //// pattern_2 ////////////////////////////////////////////////////////////////////////////// -->
 
+<!-- //// pattern_3 ////////////////////////////////////////////////////////////////////////////// -->
+   
+<symbol id="pattern_3">
+       
+<!-- All arrows and node positions with boundary box-->
+
+<!-- boundary box-->
+<g class="pattern_3-box"><rect x="0" y="0" width="200" height="200" class="Box"/></g>
+
+<!-- Arrows -->         
+<g transform="translate(95,0)" class="pattern_3-arrow_1"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(200,95) rotate(90)" class="pattern_3-arrow_2"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(105,200) rotate(180)" class="pattern_3-arrow_3"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(0,105) rotate(270)" class="pattern_3-arrow_4"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(195,-2.5) rotate(45)" class="pattern_3-arrow_5"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(202.5,195) rotate(135)" class="pattern_3-arrow_6"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(5,202.5) rotate(225)" class="pattern_3-arrow_7"><use xlink:href="#arrow" /></g>
+         
+<g transform="translate(-2.5,5) rotate(315)" class="pattern_3-arrow_8"><use xlink:href="#arrow" /></g>
+         
+         
+<!-- Node: Center -->
+<g class="pattern_3-node_1"><circle cx="100" cy="100" r="50" class="Node"/></g>
+
+<!-- Node: middle / top -->
+<g class="pattern_3-node_2"><circle cx="100" cy="50" r="50" class="Node"/></g>
+
+<!-- Node: left / top -->  
+<g class="pattern_3-node_3"><circle cx="50" cy="50" r="50" class="Node"/></g>
+
+<!-- Node: right / top -->
+<g class="pattern_3-node_4"><circle cx="150" cy="50" r="50" class="Node"/></g>
+
+<!-- Node: middle / bottom -->
+<g class="pattern_3-node_5"><circle cx="100" cy="150" r="50" class="Node"/></g>
+
+<!-- Node: left / bottom --> 
+<g class="pattern_3-node_6"><circle cx="50" cy="150" r="50" class="Node"/></g>
+
+<!-- Node: right / bottom --> 
+<g class="pattern_3-node_7"><circle cx="150" cy="150" r="50" class="Node"/></g>
+
+<!-- Node: left / left -->
+<g class="pattern_3-node_8"><circle cx="50" cy="100" r="50" class="Node"/></g>
+
+<!-- Node: right / right -->
+<g class="pattern_3-node_9"><circle cx="150" cy="100" r="50" class="Node"/></g>
+
+</symbol>
+   
+<!-- //// pattern_3 ////////////////////////////////////////////////////////////////////////////// -->
 
 </defs>
   
@@ -200,7 +285,10 @@ g.pattern_2-node_9  { visibility: hidden }
       <use xlink:href="#pattern_1"  /></g>
       
    <g id="pattern_2" transform="translate(200,0)">
-      <use xlink:href="#pattern_2"  /></g>   
+      <use xlink:href="#pattern_2"  /></g> 
+      
+   <g id="pattern_3" transform="translate(400,0)">
+      <use xlink:href="#pattern_3"  /></g>      
       
 </g>
    
