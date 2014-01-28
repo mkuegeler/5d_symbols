@@ -9,50 +9,67 @@
 
 /* Core style definition of node elements */
 rect.Box { fill:none; stroke:#0000ff; stroke-width:0.5 }
-circle.Node { stroke:#000000; stroke-width:1; fill:#e8e8e8 }       
+circle.Node { stroke:#000000; stroke-width:1; fill:#e8e8e8; fill:url(#nodeRadialGradient_A) }       
 line.Arrow  { stroke:#000000; stroke-width:1 }
 polygon.Arrow { fill:#ff0000 }
 
 
 /* node variants in groups  */
-/* ------------------------------------ */
-
+/* ------------------------------------   */
 /* pattern_0 */
 
 g.pattern_0-box     { visibility: visible }
 
+g.pattern_0-ahead_1 { visibility: visible }
 g.pattern_0-arrow_1 { visibility: visible }
-g.pattern_0-arrow_2 { visibility: hidden }
-g.pattern_0-arrow_3 { visibility: hidden }
-g.pattern_0-arrow_4 { visibility: hidden }
-g.pattern_0-arrow_5 { visibility: hidden }
-g.pattern_0-arrow_6 { visibility: hidden }
-g.pattern_0-arrow_7 { visibility: hidden }
-g.pattern_0-arrow_8 { visibility: hidden }
 
-g.pattern_0-node_1  { visibility: visible }
-g.pattern_0-node_2  { visibility: hidden }
-g.pattern_0-node_3  { visibility: hidden }
-g.pattern_0-node_4  { visibility: hidden }
-g.pattern_0-node_5  { visibility: hidden }
-g.pattern_0-node_6  { visibility: hidden }
-g.pattern_0-node_7  { visibility: hidden }
-g.pattern_0-node_8  { visibility: hidden }
-g.pattern_0-node_9  { visibility: hidden }
+g.pattern_0-ahead_2 { visibility: visible }
+g.pattern_0-arrow_2 { visibility: visible }
 
-/* ------------------------------------ */
+g.pattern_0-ahead_3 { visibility: visible }
+g.pattern_0-arrow_3 { visibility: visible }
 
+g.pattern_0-ahead_4 { visibility: visible }
+g.pattern_0-arrow_4 { visibility: visible }
+
+g.pattern_0-ahead_5 { visibility: visible }
+g.pattern_0-arrow_5 { visibility: visible }
+
+g.pattern_0-ahead_6 { visibility: visible }
+g.pattern_0-arrow_6 { visibility: visible }
+
+g.pattern_0-ahead_7 { visibility: visible }
+g.pattern_0-arrow_7 { visibility: visible }
+
+g.pattern_0-ahead_8 { visibility: visible }
+g.pattern_0-arrow_8 { visibility: visible }
+
+g.pattern_0-node    { visibility: visible }
+
+/* ------------------------------------   */
 
 
 ]]>
 </style>
 
-
   
 <defs>
-<symbol id="arrow">
-      <polygon points="0,10 5,0 10,10" class="Arrow" />
-         <line x1="5" y1="10" x2="5" y2="100" class="Arrow" />
+
+<radialGradient id="nodeRadialGradient_A"
+           fx="5%" fy="5%" r="65%"
+           spreadMethod="pad">
+          <stop offset="0%"   stop-color="#00ee00" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#006600" stop-opacity="1" />
+</radialGradient>
+
+
+<symbol id="arrow_head">
+      <polygon points="0,10 5,0 10,10" class="Arrow" />         
+</symbol>
+
+
+<symbol id="arrow_line">      
+         <line x1="5" y1="1" x2="5" y2="100" class="Arrow" />
 </symbol>
 
 
@@ -66,66 +83,81 @@ g.pattern_0-node_9  { visibility: hidden }
 <g class="pattern_0-box"><rect x="0" y="0" width="200" height="200" class="Box"/></g>
 
 <!-- Arrows -->         
-<g class="pattern_0-arrow_1" transform="translate(95,0)" ><use xlink:href="#arrow" /></g>
+<g class="pattern_0-arrow_1" transform="translate(95,0)" >
+<use xlink:href="#arrow_line" />
+    <g class="pattern_0-ahead_1" ><use xlink:href="#arrow_head" /></g>
+</g>
 
-<g class="pattern_0-arrow_2" transform="translate(195,-2.5) rotate(45)" ><use xlink:href="#arrow" /></g>
+<g class="pattern_0-arrow_2" transform="translate(197,-4) rotate(45)" >
+<use xlink:href="#arrow_line" />
+    <g class="pattern_0-ahead_2" ><use xlink:href="#arrow_head" /></g>
+</g>
          
-<g class="pattern_0-arrow_3" transform="translate(200,95) rotate(90)" ><use xlink:href="#arrow" /></g>
+<g class="pattern_0-arrow_3" transform="translate(200,95) rotate(90)" >
+<use xlink:href="#arrow" />
+<use xlink:href="#arrow_line" />
+    <g class="pattern_0-ahead_3" ><use xlink:href="#arrow_head" /></g>
+</g>
 
-<g class="pattern_0-arrow_4" transform="translate(202.5,195) rotate(135)" ><use xlink:href="#arrow" /></g>
+<g class="pattern_0-arrow_4" transform="translate(204,197) rotate(135)" >
+<use xlink:href="#arrow" />
+<use xlink:href="#arrow_line" />
+    <g class="pattern_0-ahead_4" ><use xlink:href="#arrow_head" /></g>
+</g>
          
-<g class="pattern_0-arrow_5" transform="translate(105,200) rotate(180)" ><use xlink:href="#arrow" /></g>
+<g class="pattern_0-arrow_5" transform="translate(105,200) rotate(180)" >
+<use xlink:href="#arrow" />
+<use xlink:href="#arrow_line" />
+    <g class="pattern_0-ahead_5" ><use xlink:href="#arrow_head" /></g>
+</g>
 
-<g class="pattern_0-arrow_6" transform="translate(5,202.5) rotate(225)" ><use xlink:href="#arrow" /></g>
+<g class="pattern_0-arrow_6" transform="translate(3,204) rotate(225)" >
+<use xlink:href="#arrow" />
+<use xlink:href="#arrow_line" />
+    <g class="pattern_0-ahead_6" ><use xlink:href="#arrow_head" /></g>
+</g>
          
-<g class="pattern_0-arrow_7" transform="translate(0,105) rotate(270)" ><use xlink:href="#arrow" /></g>
+<g class="pattern_0-arrow_7" transform="translate(0,105) rotate(270)" >
+<use xlink:href="#arrow" />
+<use xlink:href="#arrow_line" />
+    <g class="pattern_0-ahead_7" ><use xlink:href="#arrow_head" /></g>
+</g>
        
-<g class="pattern_0-arrow_8" transform="translate(-2.5,5) rotate(315)" ><use xlink:href="#arrow" /></g>
-         
-         
+<g class="pattern_0-arrow_8" transform="translate(-4,3) rotate(315)" >
+<use xlink:href="#arrow" />
+<use xlink:href="#arrow_line" />
+    <g class="pattern_0-ahead_8" ><use xlink:href="#arrow_head" /></g>
+</g>
+     
 <!-- Node: Center -->
-<g class="pattern_0-node_1"><circle cx="100" cy="100" r="50" class="Node"/></g>
-
-<!-- Node: middle / top -->
-<g class="pattern_0-node_2"><circle cx="100" cy="50" r="50" class="Node"/></g>
-
-<!-- Node: left / top -->  
-<g class="pattern_0-node_3"><circle cx="50" cy="50" r="50" class="Node"/></g>
-
-<!-- Node: right / top -->
-<g class="pattern_0-node_4"><circle cx="150" cy="50" r="50" class="Node"/></g>
-
-<!-- Node: middle / bottom -->
-<g class="pattern_0-node_5"><circle cx="100" cy="150" r="50" class="Node"/></g>
-
-<!-- Node: left / bottom --> 
-<g class="pattern_0-node_6"><circle cx="50" cy="150" r="50" class="Node"/></g>
-
-<!-- Node: right / bottom --> 
-<g class="pattern_0-node_7"><circle cx="150" cy="150" r="50" class="Node"/></g>
-
-<!-- Node: left / left -->
-<g class="pattern_0-node_8"><circle cx="50" cy="100" r="50" class="Node"/></g>
-
-<!-- Node: right / right -->
-<g class="pattern_0-node_9"><circle cx="150" cy="100" r="50" class="Node"/></g>
+<g class="pattern_0-node"><circle cx="100" cy="100" r="50" class="Node" /></g>
 
 </symbol>
-   
+ 
 <!-- //// pattern_0 ////////////////////////////////////////////////////////////////////////////// -->
 
 </defs>
   
 <g id="graph" transform="translate(0,0) scale(2)">
    
-   <g id="pattern_0_A" transform="translate(0,0)" onclick="alert(this.id)">   
+   <g id="pattern_0_1" transform="translate(0,0)" onclick="alert(this.id)">   
       <use xlink:href="#pattern_0"  />
-      <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Example A</text>
+      <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Node 1</text>
    </g> 
    
-   <g id="pattern_0_B" transform="translate(200,0)" onclick="alert(this.id)">   
+   <g id="pattern_0_2" transform="translate(200,0)" onclick="alert(this.id)">   
       <use xlink:href="#pattern_0"  />
-      <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Example B</text>
+      <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Node 2</text>
+   </g> 
+   
+   <g id="pattern_0_3" transform="translate(0,200)" onclick="alert(this.id)">   
+      <use xlink:href="#pattern_0"  />
+      <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Node 3</text>
+   </g> 
+   
+   <g id="pattern_0_4" transform="translate(200,200)" onclick="alert(this.id)">   
+      <use xlink:href="#pattern_0"  />
+      <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Node 4</text>
    </g> 
    
      
