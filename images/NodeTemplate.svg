@@ -138,7 +138,7 @@ g.pattern_0-node    { visibility: visible }
 
 </defs>
   
-<g id="graph" transform="translate(0,0) scale(2)">
+<g id="graph" transform="translate(0,0) scale(4)">
    
    <g id="pattern_0_1" transform="translate(0,0)" onclick="alert(this.id)">   
       <use xlink:href="#pattern_0"  />
