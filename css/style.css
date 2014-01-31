@@ -1,6 +1,6 @@
 /* Put your CSS here */
 
-html, body { padding:5px; }
+html, body { padding-left:10px;padding-right:10px;  }
  
 iframe { overflow:hidden; border: none; width: 100%; height: 100%; }
 

@@ -11,7 +11,7 @@
 rect.Box { fill:none; stroke:#0000ff; stroke-width:0.5 }
 circle.Node { stroke:#000000; stroke-width:1; fill:#e8e8e8; fill:url(#nodeRadialGradient_A) }       
 line.Arrow  { stroke:#000000; stroke-width:1 }
-polygon.Arrow { fill:#ff0000 }
+polygon.Arrow { fill:#000000 }
 
 
 /* node variants in groups  */
@@ -140,22 +140,22 @@ g.pattern_0-node    { visibility: visible }
   
 <g id="graph" transform="translate(0,0) scale(4)">
    
-   <g id="pattern_0_1" transform="translate(0,0)" onclick="alert(this.id)">   
+   <g id="pattern_0_1" transform="translate(0,0)">   
       <use xlink:href="#pattern_0"  />
-      <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Node 1</text>
+      <text x="100" y="105"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Node 1</text>
    </g> 
    
-   <g id="pattern_0_2" transform="translate(200,0)" onclick="alert(this.id)">   
+   <g id="pattern_0_2" transform="translate(200,0)">   
       <use xlink:href="#pattern_0"  />
       <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Node 2</text>
    </g> 
    
-   <g id="pattern_0_3" transform="translate(0,200)" onclick="alert(this.id)">   
+   <g id="pattern_0_3" transform="translate(0,200)">   
       <use xlink:href="#pattern_0"  />
       <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Node 3</text>
    </g> 
    
-   <g id="pattern_0_4" transform="translate(200,200)" onclick="alert(this.id)">   
+   <g id="pattern_0_4" transform="translate(200,200)">   
       <use xlink:href="#pattern_0"  />
       <text x="100" y="100"  style="fill: #000000; stroke: none; font-size: 16px; text-anchor: middle">Node 4</text>
    </g> 
