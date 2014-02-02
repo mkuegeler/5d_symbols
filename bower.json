@@ -1,0 +1,26 @@
+{
+  "name": "5d_symbols",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mkuegeler/5d_symbols",
+  "authors": [
+    "mkuegeler <cc@kuegeler.com>"
+  ],
+  "description": "SVG Data Design",
+  "main": "5d_symbols",
+  "keywords": [
+    "SVG"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~1.3.1",
+    "ember-data": "~0.0.14"
+  }
+}
