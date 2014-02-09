@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="2000" height="2000" viewBox="0, 0, 2000, 2000">
+
+<style type="text/css" >
+<![CDATA[
+
+/* Core style definition of node elements */
+rect.Box { fill:none; stroke:#0000ff; stroke-width:0.5 }
+circle.Node { stroke:#000000; stroke-width:1; fill:#e8e8e8; fill:url(#nodeRadialGradient_A) }       
+line.Arrow  { stroke:#000000; stroke-width:1 }
+polygon.Arrow { fill:#000000 }
+text.Node {fill: #000000; stroke: none; font-size: 16px; text-anchor: middle}
+text.Relationship {fill: #000000; stroke: none; font-size: 6px; text-anchor: middle}
+
+]]>
+</style>
+
+  
+<defs>
+
+
+<path id="ArrowPath" d="M15,1 L15,100"/>
+
+
+
+<radialGradient id="nodeRadialGradient_A"
+           fx="5%" fy="5%" r="65%"
+           spreadMethod="pad">
+          <stop offset="0%"   stop-color="#00ee00" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#006600" stop-opacity="1" />
+</radialGradient>
+
+
+<symbol id="arrow_head">
+      <polygon points="0,10 5,0 10,10" class="Arrow" />         
+</symbol>
+
+
+<symbol id="arrow_line">      
+         <line x1="5" y1="1" x2="5" y2="100" class="Arrow" />
+</symbol>
+
+
+</defs>
+  
+<g id="graph" transform="translate(0,0) scale(2)">
+
+
+<!-- ################################# pattern_0_1 ########################################### -->   
+<g id="pattern_0_1" transform="translate(0,0)">   
+
+<!-- boundary box-->
+<g id="pattern_0-box" style="visibility:visible"><rect x="0" y="0" width="200" height="200" class="Box"/></g>
+
+<!-- Arrows -->         
+<g id="pattern_0-arrow_1" transform="translate(95,0)" >
+    <use xlink:href="#arrow_line" style="visibility:visible"/>
+    <use xlink:href="#arrow_head" style="visibility:visible"/>
+    <use xlink:href="#arrow_head" style="visibility:visible" transform="translate(10,50) rotate(180)"/>
+    
+     <text x="25" y="0" class="Relationship" transform="translate(35,50) rotate(180)" onclick="alert('Relationship 1')">
+      <textPath xlink:href="#ArrowPath">Relationship 1</textPath>
+    </text>
+</g>
+
+<g id="pattern_0-arrow_2" transform="translate(197,-4) rotate(45)" >
+    <use xlink:href="#arrow_line" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" transform="translate(10,92) rotate(180)"/>
+    
+     <text x="45" y="0" class="Relationship" transform="translate(35,95) rotate(180)" onclick="alert('Relationship 2')">
+      <textPath xlink:href="#ArrowPath">Relationship 2</textPath>
+    </text>
+    
+</g>
+         
+<g id="pattern_0-arrow_3" transform="translate(200,95) rotate(90)" >
+    <use xlink:href="#arrow_line" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" />    
+    <use xlink:href="#arrow_head" style="visibility:visible" transform="translate(10,50) rotate(180)"/>
+    
+     <text x="25" y="0" class="Relationship" transform="translate(35,50) rotate(180)" onclick="alert('Relationship 3')">
+      <textPath xlink:href="#ArrowPath">Relationship 3</textPath>
+    </text>
+    
+</g>
+
+<g id="pattern_0-arrow_4" transform="translate(204,197) rotate(135)" >
+    <use xlink:href="#arrow_line" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" transform="translate(10,92) rotate(180)"/>
+    
+     <text x="45" y="0" class="Relationship" transform="translate(35,95) rotate(180)" onclick="alert('Relationship 4')">
+      <textPath xlink:href="#ArrowPath">Relationship 4</textPath>
+    </text>
+
+</g>
+         
+<g id="pattern_0-arrow_5" transform="translate(105,200) rotate(180)" >
+    <use xlink:href="#arrow_line" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" transform="translate(10,50) rotate(180)"/>
+    
+     <text x="25" y="0" class="Relationship" transform="translate(35,50) rotate(180)" onclick="alert('Relationship 5')">
+      <textPath xlink:href="#ArrowPath">Relationship 5</textPath>
+    </text>
+   
+</g>
+
+<g id="pattern_0-arrow_6" transform="translate(3,204) rotate(225)" >
+    <use xlink:href="#arrow_line" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" transform="translate(10,92) rotate(180)"/>
+    
+     <text x="45" y="0" class="Relationship" onclick="alert('Relationship 6')">
+      <textPath xlink:href="#ArrowPath">Relationship 6</textPath>
+    </text>
+
+</g>
+         
+<g id="pattern_0-arrow_7" transform="translate(0,105) rotate(270)" >
+    <use xlink:href="#arrow_line" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" transform="translate(10,50) rotate(180)"/>
+    
+     <text x="25" y="0" class="Relationship" onclick="alert('Relationship 7')">
+      <textPath xlink:href="#ArrowPath">Relationship 7</textPath>
+    </text>
+
+</g>
+       
+<g class="pattern_0-arrow_8" transform="translate(-4,3) rotate(315)" >    
+    <use xlink:href="#arrow_line" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" />
+    <use xlink:href="#arrow_head" style="visibility:visible" transform="translate(10,92) rotate(180)"/>
+    
+    <text x="45" y="0" class="Relationship" onclick="alert('Relationship 8')">
+      <textPath xlink:href="#ArrowPath">Relationship 8</textPath>
+    </text>
+
+</g>
+     
+<!-- Node: Center -->
+<g id="pattern_0-node" style="visibility:visible">
+    <circle cx="100" cy="100" r="50" class="Node" />
+    <text x="100" y="105"  class="Node" onclick="alert('Node 0')">Node 0</text>
+</g>
+</g> 
+<!-- ################################# pattern_0_1 ########################################### -->   
+
+
+ 
+<!-- end of main group  -->     
+</g>
+   
+   
+</svg>
