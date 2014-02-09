@@ -1,5 +1,6 @@
 {
-"variant" : [
+   "style" : [
+
 
 {"name": "pattern_0-box",     "visibility": "visible"},
 
@@ -29,32 +30,5 @@
 
 {"name": "pattern_0-node",    "visibility": "visible"}
 
-]
-  
-
-},
-
-{	
-"symbol" : [
-{"name" : "arrow_head", "class": "Arrow", "points" : "0,10 5,0 10,10" }
-]
-
-},
-
-{	
-"symbol" : [
-{"name" : "arrow_line", "class": "Arrow", "x1": "5", "y1": "1",  "x2":  "5", "y2": "100"  }
-]
-
-},
-
-{	
-"symbol" : [
-{"name" : "arrow_line", "class": "Arrow", "x1": "5", "y1": "1",  "x2":  "5", "y2": "100"  }
-]
-
-},
-
-
-
-
+    
+}

@@ -49,11 +49,3 @@ config.yml
 # Aptana Studio #
 ######################
 .project
-
-# bower #
-######################
-node_modules/*
-bower_components/*
-test
-tests
-
