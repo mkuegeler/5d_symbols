@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>5deen Symbols: Sample</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<!-- custom styles -->
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<!-- This library provides XML to JSON (JavaScript Objects) and vice versa javascript conversion functions. -->
+<script type='text/javascript' src="https://x2js.googlecode.com/hg/xml2json.js"></script>
+
+
+<script type='text/javascript'>//<![CDATA[ 
+
+
+// Create x2js instance with default config
+var x2js = new X2JS();  
+
+
+var sampleJson1 = {
+            MyRoot : {
+                MyChild : 'my_child_value',
+                MyAnotherChild : 10,
+                MyArray : [ 'test', 'test2' ],
+                MyArrayRecords : [ 
+                    {
+                        ttt : 'vvvv' 
+                    },
+                    {
+                        ttt : 'vvvv2' 
+                    }                     
+                ]
+            }
+       };
+
+
+var xmlDocStr1 = x2js.json2xml_str(sampleJson1);
+
+
+
+
+
+
+var arrowJsonStr = x2js.json2xml_str(arrowJson);
+
+
+var sampleJson2 =
+        {
+                MyRoot : {
+                        namedItemArray: {
+                                item : [ 
+                                        { first: 'success1' } , 
+                                        { first: 'success2' }
+                                ] 
+                        },
+                        namedArray: [ 
+                                { first: 'success1' } , 
+                                { first: 'success2' } 
+                        ],
+                        justArray: [ 'just success1', 'just success2' ],
+                        arrayWithAttrs : [
+                                {
+                                        _test : 'successAttr',
+                                        __text : 'success',
+                                        temp : 'successTemp'
+                                },
+                                {
+                                        _test : 'successAttr2',
+                                        __text : 'success2',
+                                        temp : 'successTemp2'                           
+                                }                       
+                        ]
+                } 
+ };
+  
+    
+var xmlDocStr2 = x2js.json2xml_str(sampleJson2);
+
+
+var arrowJson = {
+"symbol": { "_id": "arrow_head", 
+      "polygon": {"_points": "0,10 5,0 10,10", "_class": "Arrow"}, 
+          
+},
+    
+};
+
+
+var circleJson = {
+"circle": { "_cx": 100, "_cy": 100,  "_r": 50,  "_class": "Node" 
+      
+         
+},
+    
+};
+
+// <circle cx="100" cy="100" r="50" class="Node" />
+
+
+var circleJsonStr = x2js.json2xml_str(circleJson);
+    
+console.log(circleJsonStr);
+
+
+//]]>  
+</script>
+
+
+<div class="page-header">
+  <h1>5Data <small>Sample</small></h1>
+</div>
+
+<!-- Main   -->	
+<div class="col">
+	<div><p>Example: Node 1 to Node 2. Node 1 to Node 3. Node 1 to Node 4</p></div>
+  <div><form class="form-horizontal" role="form">
+<textarea class="form-control" rows="3"></textarea>
+</form> <br/> </div>
+
+<div>
+<!-- embedded SVG -->	
+<svg onload="init(circleJsonStr)">
+		
+<script>
+
+
+
+function init (str) {
+	
+	return str;
+}	
+
+
+	
+</script>
+
+
+<style type="text/css" >
+
+
+/* Core style definition of node elements */
+rect.Box { fill:none; stroke:#0000ff; stroke-width:0.5 }
+circle.Node { stroke:#000000; stroke-width:1; fill:#e8e8e8; fill:url(#nodeRadialGradient_A) }       
+line.Arrow  { stroke:#000000; stroke-width:1 }
+polygon.Arrow { fill:#000000 }
+text.Node {fill: #000000; stroke: none; font-size: 16px; text-anchor: middle}
+text.Relationship {fill: #000000; stroke: none; font-size: 6px; text-anchor: middle}
+
+
+</style>
+
+<g id="main"></g>
+		
+
+		
+</svg>
+<!-- embedded SVG -->
+</div>
+  
+</div>
+
+
+<!-- Main   -->		
+
+
+
+</body>
+</html>

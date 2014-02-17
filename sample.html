@@ -39,12 +39,10 @@
 
 
 // Create x2js instance with default config
-    var x2js = new X2JS();  
+var x2js = new X2JS();  
 
 
-// JSON to XML string
-    var xmlDocStr = x2js.json2xml_str(
-        {
+var sampleJson = {
             MyRoot : {
                 MyChild : 'my_child_value',
                 MyAnotherChild : 10,
@@ -58,10 +56,13 @@
                     }                     
                 ]
             }
-        }
-    );
+       };
+
+
+var xmlDocStr = x2js.json2xml_str(sampleJson);
+
     
-    console.log(xmlDocStr);
+console.log(xmlDocStr);
 
 
 //]]>  
@@ -79,7 +80,7 @@
 <textarea class="form-control" rows="3"></textarea>
 </form> <br/> </div>
 
-  <div ><a href="images/sample.svg"><img src="images/sample.svg" height="600" width="600"/></a></div>
+<div ><a href="images/sample.svg"><img src="images/sample.svg" height="600" width="600"/></a></div>
   
 </div>
 
