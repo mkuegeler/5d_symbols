@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="2000" height="2000" viewBox="0, 0, 2000, 2000">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="640" height="640" viewBox="0, 0, 640, 640">
 
 <style type="text/css" >
 <![CDATA[
@@ -138,7 +138,7 @@ g.pattern_0-node    { visibility: visible }
 
 </defs>
   
-<g id="graph" transform="translate(0,0) scale(4)">
+<g id="graph" transform="translate(0,0) scale(1)">
    
    <g id="pattern_0_1" transform="translate(0,0)">   
       <use xlink:href="#pattern_0"  />
