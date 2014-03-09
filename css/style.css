@@ -7,3 +7,7 @@ html, body {
 
 .key { width: 50px}
 
+.previewIframe {
+	margin: 0; padding: 0; border: none; width: 140px; height: 140px; 
+} 
+
