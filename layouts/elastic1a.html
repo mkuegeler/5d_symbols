@@ -19,12 +19,34 @@
 		
 <style type="text/css">
 
+
+.pageHeaderHidden {
+	visibility: hidden;
+}
+
+.pageNavHidden {
+	visibility: hidden;
+}
+
+.pageHeaderVisible {
+	visibility: visible;
+}
+
+.pageNavVisible {
+	visibility: visible;
+}
+
+
 .smallCanvas {
 	width: 250pt; height: 150pt; 
 } 
   
 .midCanvas {
 	width: 500pt; height: 300pt; 
+}
+
+.fullCanvas {
+	width: 100%; height:100%; 
 }
 </style>
 
@@ -33,15 +55,68 @@
 <script type='text/javascript'>
 //<![CDATA[ 
 
-function zoom () {
+function zoomOut () {
 	
 	var canvas = document.getElementById('canvas');
-	
 	canvas.setAttribute("class","midCanvas");
+	
+	//var header = document.getElementById('pageHeader');
+	//var nav = document.getElementById('pageNav');
+	//header.setAttribute("class","pageHeaderVisible");
+	//nav.setAttribute("class","pageNavVisible");
+	
+	
+	
+	
 	
 	
 }
 
+function zoomIn () {
+	
+	var canvas = document.getElementById('canvas');
+	canvas.setAttribute("class","smallCanvas");
+	
+	//var header = document.getElementById('pageHeader');
+	//var nav = document.getElementById('pageNav');
+	//header.setAttribute("class","pageNavVisible");
+	//nav.setAttribute("class","pageNavVisible");
+	
+	
+	
+	
+	
+}
+
+function zoomFull () {
+	
+	var canvas = document.getElementById('canvas');
+	canvas.setAttribute("class","fullCanvas");
+	
+	
+	//var header = document.getElementById('pageHeader');
+	//var nav = document.getElementById('pageNav');
+	//header.setAttribute("class","pageHeaderHidden");
+	//nav.setAttribute("class","pageNavHidden");
+	
+	
+}
+
+
+function slide_1_visible ()
+{
+var svg = document.getElementById("svg"); 
+var slide_1 = svg.getElementById("slide_1");
+slide_1.setAttributeNS(null, "class", "slide_1_visible");
+}
+
+
+function slide_1_hidden ()
+{
+var svg = document.getElementById("svg"); 
+var slide_1 = svg.getElementById("slide_1");
+slide_1.setAttributeNS(null, "class", "slide_1_hidden");
+}
 
 //]]>  
 </script>
@@ -51,10 +126,10 @@ function zoom () {
 
 	<body>
 		<div>
-			<header>
+			<header id="pageHeader" class="pageHeaderVisible">
 				<h1>elastic1a</h1>
 			</header>
-			<nav>
+			<nav id="pageNav" class="pageNavVisible">
 				<p>
 					<a href="/">Home</a>
 				</p>
@@ -80,6 +155,14 @@ so that the graphic doesn't overflow the box.
 rect.frame { stroke:none; fill:url(#nodeRadialGradient_A) }
 circle.node { stroke:none; fill:#00ff00; }
 
+g.slide_0_visible {visibility:visible;}
+g.slide_1_visible {visibility:visible;}
+g.slide_2_visible {visibility:visible;}
+
+g.slide_0_hidden {visibility:hidden;}
+g.slide_1_hidden {visibility:hidden;}
+g.slide_2_hidden {visibility:hidden;}
+
 ]]>
 </style>
 <defs id="templates">
@@ -93,10 +176,20 @@ circle.node { stroke:none; fill:#00ff00; }
 
 
 </defs>
-<g>
+<g id="slide_0" class="slide_0_visible">
     <rect id="frame" width="5" height="3" y="0" x="0" class="frame" />
     
+    
+    
+</g> 
+
+<g id="slide_1" class="slide_1_visible">
     <circle cx="2.5" cy="1.5" r="0.75" class="node"/>
+    
+</g>  
+
+<g id="slide_2" class="slide_2_visible">
+    <circle cx="2.5" cy="1.5" r="0.55" class="node"/>
     
 </g>    
 
@@ -105,9 +198,12 @@ circle.node { stroke:none; fill:#00ff00; }
 
 </div>
 
-<div><p onclick="zoom()">Zoom Out</p></div> 
+<div><p onclick="zoomIn()">Zoom In</p><p onclick="zoomOut()">Zoom Out</p><p onclick="zoomFull()">Full screen</p>
+	<p onclick="slide_1_hidden()">Hide slide_1</p><p onclick="slide_1_visible()">Show slide_1</p>
+</div> 
 
 			<footer>
+				<hr />
 				<p>
 					&copy; Copyright  by Michael Kügeler
 				</p>
