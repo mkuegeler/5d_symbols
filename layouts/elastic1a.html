@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>elastic1a</title>
+		<meta name="description" content="">
+		<meta name="author" content="Michael Kügeler">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
+<style type="text/css">
+
+.smallCanvas {
+	width: 250pt; height: 150pt; 
+} 
+  
+.midCanvas {
+	width: 500pt; height: 300pt; 
+}
+</style>
+
+
+
+<script type='text/javascript'>
+//<![CDATA[ 
+
+function zoom () {
+	
+	var canvas = document.getElementById('canvas');
+	
+	canvas.setAttribute("class","midCanvas");
+	
+	
+}
+
+
+//]]>  
+</script>
+		
+		
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>elastic1a</h1>
+			</header>
+			<nav>
+				<p>
+					<a href="/">Home</a>
+				</p>
+				<p>
+					<a href="/contact">Contact</a>
+				</p>
+			</nav>
+
+<div id="canvas" class="smallCanvas">
+				
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color: #006600;" preserveAspectRatio="xMidYMid meet" viewBox="0 0 5 3" id="svg"  >
+
+<desc>
+The preserveAspectRatio="xMidYMid meet" property means that the circle will expand to the maximum x and y sizes 
+so that the graphic doesn't overflow the box.
+</desc>
+  
+
+<style type="text/css" >
+<![CDATA[
+
+
+rect.frame { stroke:none; fill:url(#nodeRadialGradient_A) }
+circle.node { stroke:none; fill:#00ff00; }
+
+]]>
+</style>
+<defs id="templates">
+
+<radialGradient id="nodeRadialGradient_A"
+           fx="1%" fy="1%" r="100%"
+           spreadMethod="pad">
+          <stop offset="0%"   stop-color="#00ee00" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#006600" stop-opacity="1" />
+</radialGradient>
+
+
+</defs>
+<g>
+    <rect id="frame" width="5" height="3" y="0" x="0" class="frame" />
+    
+    <circle cx="2.5" cy="1.5" r="0.75" class="node"/>
+    
+</g>    
+
+</svg>
+
+
+</div>
+
+<div><p onclick="zoom()">Zoom Out</p></div> 
+
+			<footer>
+				<p>
+					&copy; Copyright  by Michael Kügeler
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

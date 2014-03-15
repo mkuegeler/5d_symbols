@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color: #006600;" preserveAspectRatio="none" viewBox="0 0 5 3" id="svg"  >
+
+
+  
+
+<style type="text/css" >
+<![CDATA[
+
+
+rect.frame { stroke:none; fill:url(#nodeRadialGradient_A) }
+rect.pattern { stroke:none; fill:url(#nodeRadialGradient_A) }
+circle.node { stroke:none; fill:#00ff00; }
+line.grid  { stroke:#ffffff;  }
+
+]]>
+</style>
+<defs id="templates">
+
+<radialGradient id="nodeRadialGradient_A"
+           fx="1%" fy="1%" r="100%"
+           spreadMethod="pad">
+          <stop offset="0%"   stop-color="#00ee00" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#006600" stop-opacity="1" />
+</radialGradient>
+
+<pattern id="muster" patternUnits="userSpaceOnUse" width="0.25" height="0.25" x="0" y="0">
+      <line x1="0.25" y1="0" x2="0.25" y2="0.0025" class="grid" />
+      <line x1="0" y1="0.25" x2="0.0025" y2="0.25" class="grid" />
+      <rect width="0.22" height="0.22" y="0.015" x="0.015" class="pattern"/>
+      
+</pattern>
+
+</defs>
+<g>
+    
+    <rect id="frame" width="5" height="3" y="0" x="0" fill="url(#muster)"/>
+    
+    
+</g>    
+
+</svg>
