@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color: #006600;" preserveAspectRatio="xMidYMid meet" viewBox="0 0 5 3" id="svg"  >
+
+<desc>
+The preserveAspectRatio="xMidYMid meet" property means that the circle will expand to the maximum x and y sizes 
+so that the graphic doesn't overflow the box.
+</desc>
+  
+
+<style type="text/css" >
+<![CDATA[
+
+
+rect.frame { stroke:none; fill:url(#nodeRadialGradient_A) }
+circle.node { stroke:none; fill:#00ff00; }
+
+]]>
+</style>
+<defs id="templates">
+
+<radialGradient id="nodeRadialGradient_A"
+           fx="1%" fy="1%" r="100%"
+           spreadMethod="pad">
+          <stop offset="0%"   stop-color="#00ee00" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#006600" stop-opacity="1" />
+</radialGradient>
+
+
+</defs>
+<g>
+    <rect id="frame" width="5" height="3" y="0" x="0" class="frame" />
+    
+    <circle cx="2.5" cy="1.5" r="0.75" class="node"/>
+    
+</g>    
+
+</svg>
