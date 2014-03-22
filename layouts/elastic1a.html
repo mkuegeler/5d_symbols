@@ -118,6 +118,20 @@ var slide_1 = svg.getElementById("slide_1");
 slide_1.setAttributeNS(null, "class", "slide_1_hidden");
 }
 
+
+function slides (slide)
+{
+var svg = document.getElementById("svg"); 
+var slide = svg.getElementById(slide);
+var v = slide.getAttributeNS(null,"style");
+
+if (v == 'visibility:visible') {v = 'visibility:hidden';}
+else {v = 'visibility:visible';}
+
+slide.setAttributeNS(null, "style", v);
+
+}
+
 //]]>  
 </script>
 		
@@ -183,12 +197,18 @@ g.slide_2_hidden {visibility:hidden;}
     
 </g> 
 
-<g id="slide_1" class="slide_1_visible">
+<g id="slide_1" class="slide_1_hidden">
     <circle cx="2.5" cy="1.5" r="0.75" class="node"/>
     
 </g>  
 
-<g id="slide_2" class="slide_2_visible">
+<g id="slide_2" class="slide_2_hidden">
+    <circle cx="2.5" cy="1.5" r="0.55" class="node"/>
+    
+</g>  
+
+
+<g id="slide_3" style="visibility: visible">
     <circle cx="2.5" cy="1.5" r="0.55" class="node"/>
     
 </g>    
@@ -198,8 +218,13 @@ g.slide_2_hidden {visibility:hidden;}
 
 </div>
 
-<div><p onclick="zoomIn()">Zoom In</p><p onclick="zoomOut()">Zoom Out</p><p onclick="zoomFull()">Full screen</p>
-	<p onclick="slide_1_hidden()">Hide slide_1</p><p onclick="slide_1_visible()">Show slide_1</p>
+<div>
+	<p onclick="zoomIn()">Zoom In</p>
+	<p onclick="zoomOut()">Zoom Out</p>
+	<p onclick="zoomFull()">Full screen</p>
+	<p onclick="slide_1_hidden()">Hide slide_1</p>
+	<p onclick="slide_1_visible()">Show slide_1</p>
+	<p onclick="slides('slide_3')">Show or hide slide 3</p>
 </div> 
 
 			<footer>
