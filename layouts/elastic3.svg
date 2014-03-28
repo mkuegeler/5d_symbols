@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color: #000000;" preserveAspectRatio="xMidYMid meet" viewBox="0 0 5 3" id="svg"  >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-image: url(background.svg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 5 3" id="svg"  >
 
 <desc>
 The preserveAspectRatio="xMidYMid meet" property means that the circle will expand to the maximum x and y sizes 
@@ -45,12 +45,6 @@ circle.node_3 { stroke:#000000; stroke-width:0.005; fill:#ffffff; }
 
 
 </defs>
-<g id="layer_0">
-    
-    <rect id="frame" width="5" height="3" y="0" x="0" class="frame" />
-    
-    
-</g> 
 
 <g id="layer_1" style="visibility: visible">
     <g transform="translate(0,0) scale(0.5)">
