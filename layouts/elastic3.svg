@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color: #000000;" preserveAspectRatio="xMidYMid meet" viewBox="0 0 5 3" id="svg"  >
+
+<desc>
+The preserveAspectRatio="xMidYMid meet" property means that the circle will expand to the maximum x and y sizes 
+so that the graphic doesn't overflow the box.
+</desc>
+  
+
+<style type="text/css" >
+<![CDATA[
+
+
+rect.frame { stroke:none; fill:url(#nodeRadialGradient_A) }
+circle.node_1 { stroke:none; fill:#00ff00; }
+circle.node_2 { stroke:none; fill:url(#nodeRadialGradient_B) }
+circle.node_3 { stroke:#000000; stroke-width:0.005; fill:#ffffff; }
+
+
+
+]]>
+</style>
+<defs id="templates">
+
+<radialGradient id="nodeRadialGradient_A"
+           fx="1%" fy="1%" r="100%"
+           spreadMethod="pad">
+          <stop offset="0%"   stop-color="#ff3300" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#ffcc33" stop-opacity="1" />
+</radialGradient>
+
+
+<radialGradient id="nodeRadialGradient_B"
+           fx="1%" fy="1%" r="100%"
+           spreadMethod="pad">
+          <stop offset="0%"   stop-color="#ff6600" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#ffcc00" stop-opacity="1" />
+</radialGradient>
+
+
+
+<symbol id="node">
+    <circle cx="0.51" cy="0.51" r="0.50" class="node_2"/>
+</symbol>
+
+
+
+</defs>
+<g id="layer_0">
+    
+    <rect id="frame" width="5" height="3" y="0" x="0" class="frame" />
+    
+    
+</g> 
+
+<g id="layer_1" style="visibility: visible">
+    <g transform="translate(0,0) scale(0.5)">
+        <use xlink:href="#node" />
+    </g>  
+    
+    <g transform="translate(0,0.5) scale(0.5)">
+        <use xlink:href="#node" />
+    </g>     
+</g>  
+
+
+
+</svg>
