@@ -6,6 +6,8 @@
 
 rect.frame { stroke:none; fill:url(#nodeRadialGradient_A) }
 rect.pattern { stroke:none; fill:url(#nodeRadialGradient_A) }
+rect.pattern_2 { stroke:none; fill:#ff0000;opacity: 0.15; }
+
 circle.node { stroke:none; fill:#00ff00; }
 line.grid  { stroke:#ffffff;  }
 
@@ -20,16 +22,23 @@ line.grid  { stroke:#ffffff;  }
           <stop offset="100%" stop-color="#ffcc33" stop-opacity="1" />
 </radialGradient>
 
-<pattern id="muster" patternUnits="userSpaceOnUse" width="0.25" height="0.25" x="0" y="0">
+<pattern id="muster_1" patternUnits="userSpaceOnUse" width="0.25" height="0.25" x="0" y="0">
       <line x1="0.25" y1="0" x2="0.25" y2="0.0025" class="grid" />
       <line x1="0" y1="0.25" x2="0.0025" y2="0.25" class="grid" />
       <rect width="0.22" height="0.22" y="0.015" x="0.015" class="pattern"/>
       
 </pattern>
 
+<pattern id="muster_2" patternUnits="userSpaceOnUse" width="0.25" height="0.25" x="0" y="0">
+      
+      <rect width="0.25" height="0.25" y="0.015" x="0.015" class="pattern_2"/>
+      
+</pattern>
+
 </defs>
 <g id="layer_0">
 <rect id="frame" width="5" height="3" y="0" x="0" fill="url(#nodeRadialGradient_A)"/>
+<rect id="grid" width="5" height="3" y="0" x="0" fill="url(#muster_2)"/>
 </g>    
 
 </svg>
